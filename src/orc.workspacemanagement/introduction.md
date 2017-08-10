@@ -48,8 +48,8 @@ To create a custom workspace initializer, see the example below:
     {
         public Task InitializeAsync(IWorkspace workspace)
         {
-            workspace.SetValue("AView.Width", 200d);
-            workspace.SetValue("BView.Width", 200d);
+            workspace.SetWorkspaceValue("AView.Width", 200d);
+            workspace.SetWorkspaceValue("BView.Width", 200d);
             return TaskHelper.Completed;
         }
     }
